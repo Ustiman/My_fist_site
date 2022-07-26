@@ -42,16 +42,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;color: #232323;font-family:
 .bg_grey{
 	background-color:#e9e7e7;
 }
-.button{
-   font-family: Lato;
-   font-size: 20.9px;
-   line-height: 1.2;
-   font-weight: 700;
-   letter-spacing: -0.025em;
-}
 a,p{
-   color: #232323;
    font-family: Lato;
+   line-height: 1.2;
+   font-weight: 400;
+   letter-spacing: -0.025em;
+   color: #232323;
 }
 p{
    font-size: 16.7px;
@@ -61,65 +57,46 @@ a{
 }
 /*---------Общие-----------*/
 .first_block{
+   min-height: 820px;
+   position: absolute;
    .block_menu{
-      min-height: 115px;
-      width: 100%;
+      min-height: 212px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items:center;
       .menu_wrap{
+         height: inherit;
+         max-width: 380px;
+         width: 100%;
          display: flex;
          justify-content: space-between;
-         width: 38%;
-         .li{
+         align-items:center;
+         li{
+            display:block;
+            height: inherit;
             font-weight: 300;
             color: #515155;
-            display: block;
-         }
-         span{
-            font-weight: 700;
-            color: #232323;
+            span{
+               font-weight: 700;
+               color: #232323;
+               
+            }
          }
       }
       .button{
-         a{
-            padding: 20px 56px;
-            border: 3px solid #232323;
-            border-radius: 5px;
-         }
+         height: inherit;
+         border: 3px solid #232323;
+         border-radius: 5px;
+         padding: 20px 56px;
       }
    }
-   .content{
-      min-height: 616px;
-      display: flex;
-      justify-content: space-between;
+   .content_body{
+      min-height: 607px;
       .content_info{
-         max-height: 419px;
-         max-width: 428px;
-         display: flex;
-         flex-direction:column;
-         justify-content: space-between;
-         h1{
-            font-family: Cardo;
-            font-size: 81.5px;
-            line-height: 81px;
-            font-weight: 700;
-            letter-spacing: -0.025em;
-         }
-         .button_black{
-            color: #e9e7e7;
-            background-color: #232323;
-            padding: 20px 56px;
-            border: 3px solid #232323;
-            border-radius: 5px;
-            max-width: 256px;
-         }
+
       }
       .content_img{
          max-width: 662px;
-         img{
-            width: 100%;
-         }
       }
    }
 }
