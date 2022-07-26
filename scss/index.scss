@@ -75,81 +75,151 @@ h5,
 h6 {
    font-size: inherit;
    font-weight: 400;
-   color: #232323;
 }
-/*--------------------*/
+/*----------Обнуление----------*/
 ._body {
-   max-width: 83%;
+   max-width: 1200px;
    margin: 0 auto;
 }
 .bg_grey {
-   background-color: #e9e7e7;
+   background-color: #e9e7e7;;
 }
-a,
-p {
+.bg_black{
+   background-color: #232323;
+}
+.button {
+   padding: 20px 56px;
+   border: 5px solid #232323;
+   border-radius: 5px;
+}
+.body {
+   height: 100%;
+
+}
+h1{
+   font-family: Cardo;
+   font-size: 81.5px;
+   line-height: 81px;
+   font-weight: 700;
+   letter-spacing: -0.025em;
+   color: #232323;
+}
+p{
    font-family: Lato;
+   font-size: 16.7px;
    line-height: 1.2;
    font-weight: 400;
    letter-spacing: -0.025em;
    color: #232323;
 }
-p {
-   font-size: 16.7px;
-}
-a {
+a{
+   font-family: Lato;
    font-size: 20.9px;
+   line-height: 1.2;
+   font-weight: 700;
+   letter-spacing: -0.025em;
+   color: #232323;
 }
-.body {
-   min-height: 100%;
-   overflow: hidden;
-}
-/*---------Общие-----------*/
+/*----------Основы----------*/
 .first_block {
-   min-height: 820px;
+   min-height: 819px;
    .block_menu {
-      min-height: 212px;
+      min-height: 220px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      ul {
-         height: inherit;
-         max-width: 380px;
-         width: 100%;
+      .menu_wrap {
+         min-width: 380px;
          display: flex;
          justify-content: space-between;
-         align-items: center;
-         li {
-            display: block;
-            height: inherit;
-            font-weight: 300;
-            color: #515155;
-            span {
-               font-weight: 700;
-               color: #232323;
-            }
-         }
-      }
-      .button {
-         height: inherit;
-         border: 3px solid #232323;
-         border-radius: 5px;
-         padding: 20px 56px;
       }
    }
+   /*----------Header----------*/
    .content_body {
-      min-height: 607px;
+      max-height: 419px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      .content_info {
+   
+      .content_info{
          max-width: 428px;
          display: flex;
+         flex-direction: column;
+         align-items: flex-start;
          justify-content: space-between;
+         .button_black{
+            display: block;
+            color: #e9e7e7;
+            background-color: #232323;
+         }
       }
-      .content_img {
-         max-width: 662px;
-         img {
-            width: 100%;
+      .content_img{
+         img{
+            width: 662px;
+         }
+      }
+   }
+}
+.second_block{
+   min-height: 387px;
+   display: flex;
+   align-items:center;
+   flex-direction: column;
+   justify-content: space-around;
+   p,a{
+      max-width: 440px;
+      color: #e9e7e7;
+   }
+   .title{
+      p{
+         padding: 40px 0 0 0;
+         font-family: Cardo;
+         font-size: 55.5px;
+         line-height: 55px;
+         font-weight: 700;
+         letter-spacing: -0.025em;
+         color: #e9e7e7;
+      }
+   }
+}
+.third_block{
+   min-height: 2553px;
+}
+.third_block{
+   .block_cards{
+      display: flex;
+      .card{
+         min-height: 474px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: flex-start;
+         .title{
+            font-family: Cardo;
+            font-size: 36.4px;
+            line-height: 36px;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: #232323;
+         }
+      }
+   }
+   .block_tagline{
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .tagline{
+         max-width: 776px;
+         font-family: Cardo;
+         font-size: 97.7px;
+         line-height: 97px;
+         font-weight: 700;
+         letter-spacing: -0.025em;
+         color: #232323;
+         span{
+            font-style: italic;
+            text-decoration: underline;
          }
       }
    }
