@@ -181,11 +181,14 @@ a{
       }
    }
 }
+
 .third_block{
    min-height: 2553px;
-}
-.third_block{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    .block_cards{
+      padding-top: 130px;
       display: flex;
       .card{
          min-height: 474px;
@@ -204,6 +207,7 @@ a{
       }
    }
    .block_tagline{
+      padding-top: 131px;
       min-height: 420px;
       display: flex;
       flex-direction: column;
@@ -222,5 +226,33 @@ a{
             text-decoration: underline;
          }
       }
+   }
+   .block_more_info{
+      min-width: 1180px;
+      display:flex;
+      width: 170px;
+      flex-wrap:wrap;
+      .combo_img{
+         height: 776px;
+         padding: 15px;
+      }
+      .combo_mini_img{
+         padding: 15px;
+         img{
+            max-height: 322px;
+         }
+      }
+      .subtitle{
+         padding: 15px;
+         max-width: 236px;
+         font-family: Cardo;
+         font-size: 36.4px;
+         line-height: 50px;
+         font-weight: 700;
+         text-decoration: underline;
+         letter-spacing: -0.025em;
+         color: #232323;
+      }
+      
    }
 }
