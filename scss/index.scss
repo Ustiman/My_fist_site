@@ -242,17 +242,25 @@ a{
             max-height: 322px;
          }
       }
-      .subtitle{
-         padding: 15px;
-         max-width: 236px;
-         font-family: Cardo;
-         font-size: 36.4px;
-         line-height: 50px;
-         font-weight: 700;
-         text-decoration: underline;
-         letter-spacing: -0.025em;
-         color: #232323;
+      .section{
+         max-width: 420px;
+         display: flex;
+         justify-content: space-between;
+         .subtitle{
+            padding: 15px;
+            max-width: 236px;
+            font-family: Cardo;
+            font-size: 36.4px;
+            line-height: 50px;
+            font-weight: 700;
+            text-decoration: underline;
+            letter-spacing: -0.025em;
+            color: #232323;
+         }
       }
-      
+      a{
+         font-size: 50px;
+         padding-left: auto;
+      }
    }
 }

@@ -319,7 +319,16 @@ a {
 .third_block .block_more_info .combo_mini_img img {
   max-height: 322px;
 }
-.third_block .block_more_info .subtitle {
+.third_block .block_more_info .section {
+  max-width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.third_block .block_more_info .section .subtitle {
   padding: 15px;
   max-width: 236px;
   font-family: Cardo;
@@ -329,4 +338,8 @@ a {
   text-decoration: underline;
   letter-spacing: -0.025em;
   color: #232323;
+}
+.third_block .block_more_info a {
+  font-size: 50px;
+  padding-left: auto;
 }
